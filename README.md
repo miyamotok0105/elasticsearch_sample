@@ -1,6 +1,16 @@
 # elasticsearch_sample
 
 
+### UbuntuにaptでElasticsearch
+
+[ubuntuにaptでelasticsearchを入れる](https://self-development.info/elasticsearch%E3%81%AE%E7%B0%A1%E5%8D%98%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%80%90ubuntu-20-04%E3%80%91/)
+
+
+
+### DockerでElasticsearch
+
+2020年あたりまで動いてたが、2022年試したら動かなかった。    
+dockerや何かのバージョンがエラーにさせてる。
 
 ```
 docker-compose build
@@ -148,6 +158,22 @@ curl -X GET 'http://localhost:9200/bank/_search?pretty=true' -H 'Content-Type: a
 
 ```
 
+### Elasticsearch 8.0 を docker-compose
+
+結論動かないんだけど、なんでか不明のまま。    
+securityの設定は参考になる。
+
+
+[Elasticsearch 8.0 を docker-compose](https://zenn.dev/fujimotoshinji/scraps/4fb4616976ee00)
+
+
+### 公式
+
+公式命だと思うけど、見ても解決できず。    
+
+[ES公式](https://www.elastic.co/guide/en/elasticsearch/reference/7.17/docker.html)
+    
+[ESのPHPライブラリ](https://github.com/elastic/elasticsearch-php/tree/7.11)
 
 
 # Laravelに繋げる時
